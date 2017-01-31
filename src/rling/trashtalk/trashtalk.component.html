@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <strong> Your Randomly Generated Trash Talk </strong>
+  </div>
+  <div class="panel-body">
+    <textarea rows="5" style="width: 100%"> {{trashTalk}} </textarea>
+    <p>
+      <small>
+        Thanks go to <a href="http://daviseford.com/shittalk/">this guy</a>.
+      </small>
+    </p>
+
+  </div>
+  <div class="panel-footer text-right">
+    <button class="btn btn-default" (click)="refreshInsult()">Get another!</button>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+build/
+node_modules/
+ts_built/
+npm-debug.log

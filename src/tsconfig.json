@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "allowJs": true,
+
+        "baseUrl": ".",
+        "outDir": "../ts_built/",
+
+        "typeRoots": [
+          "./custom_types",
+          "../node_modules/@types"
+        ],
+        "types": [
+          "@types/node",
+          "node"
+        ]
+    },
+    "awesomeTypescriptLoaderOptions": {
+      "useBabel": true,
+      "babelOptions": {
+        "sourceMaps": true,
+        "presets": ["latest"]
+      },
+      "forkChecker": true,
+      "useWebpackText": true
+    },
+    "atom": { "rewriteTsconfig": false }
+}
