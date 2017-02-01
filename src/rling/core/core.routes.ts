@@ -4,5 +4,5 @@ import { DummyComponent } from 'rling/core/dummy.component';
 
 export const CORE_ROUTES: Routes = [
   { path: '', component: DummyComponent, pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent },
+  // { path: '**', component: PageNotFoundComponent },
 ];
