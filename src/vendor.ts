@@ -20,3 +20,4 @@ let _window = <any>window;
 _window.$ = _window.jQuery = $;
 
 import 'bootstrap-sass';
+import 'bootstrap-loader';
