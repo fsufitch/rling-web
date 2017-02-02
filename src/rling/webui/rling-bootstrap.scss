@@ -57,7 +57,7 @@ body {
       color: $plain_text_color;
     }
 
-    &:active, &:focus {
+    &:active, &:focus, &:active:focus {
       background: $muted_color;
     }
   }
@@ -73,8 +73,9 @@ body {
     &:visited {
       color: $plain_text_color;
     }
-    &:active, &:focus {
+    &:active, &:focus, &:active:focus {
       background: $muted_color;
+      color: $plain_text_color;
     }
   }
 
