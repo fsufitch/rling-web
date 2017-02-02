@@ -5,7 +5,8 @@ import { Observable } from 'rxjs/Observable';
   selector: 'ng2app',
   template: require('./app.component.html'),
   styles: [
-    require('./app.component.scss')
+    require('./app.component.scss'),
+    require('./rling-bootstrap.scss'),
   ],
   encapsulation: ViewEncapsulation.None,
 })

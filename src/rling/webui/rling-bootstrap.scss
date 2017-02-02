@@ -1,0 +1,94 @@
+$plain_text_color: #eee;
+$background_primary: #000;
+$background_secondary: #111;
+$highlight_primary: #f00;
+$highlight_secondary: #911;
+$muted_color: #333;
+
+body {
+  height: 100vh;
+  background: $background_secondary;
+  color: $plain_text_color;
+
+  .container, .container-fluid {
+    height: 100%;
+    background: $background_primary;
+    border-left: 15px solid $highlight_primary;
+    border-right: 15px solid $highlight_primary;
+  }
+
+  .panel {
+    background: $background_primary;
+  }
+
+  .panel-default {
+    border-color: $muted_color;
+    > .panel-heading, > .panel-footer {
+      background-color: $background_secondary;
+      color: $plain_text_color;
+      border-color: $muted_color;
+    }
+  }
+
+  .modal-content {
+    background-color: $background_secondary;
+    color: $plain_text_color;
+    .modal-header {
+      border-bottom-color: $muted_color;
+    }
+    .modal-footer {
+      border-top-color: $muted_color;
+    }
+    button.close {
+      color: white;
+    }
+  }
+
+  .btn-primary {
+    background: $highlight_secondary;
+    border-color: $muted_color;
+    color: $plain_text_color;
+    &:hover {
+      background: $highlight_primary;
+      border-color: $muted_color;
+    }
+
+    &:visited {
+      color: $plain_text_color;
+    }
+
+    &:active, &:focus {
+      background: $muted_color;
+    }
+  }
+
+  .btn-default {
+    background: $background_secondary;
+    border-color: $muted_color;
+    color: $plain_text_color;
+    &:hover {
+      background: $background_primary;
+      border-color: $muted_color;
+    }
+    &:visited {
+      color: $plain_text_color;
+    }
+    &:active, &:focus {
+      background: $muted_color;
+    }
+  }
+
+  a {
+    color: $highlight_primary;
+    &:hover, &:visited {
+      color: $highlight_secondary
+    }
+  }
+
+  textarea {
+    font-family: monospace;
+    background: $background_primary;
+    color: $plain_text_color;
+  }
+
+}
